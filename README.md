@@ -5,7 +5,8 @@ resource、service编写风格
 postman工具协助CRUD操作，上传和下载文件
 flask-resful、flask-restful-swagger-3， 如何自动生成swagger.yaml风格文档和对应swagger-ui
 设计schema函数：例如  @use_kwargs(BookRequestSchema, location='json')  # 在json里， 按照BookRequestSchema定义提取参数
-                    @use_kwargs(TokenSchema, location='headers')      # 在headers 按照TokenSchema 定义提取参数
+                      @use_kwargs(TokenSchema, location='headers')      # 在headers 按照TokenSchema 定义提取参数
+                      帮助更好理解swagger-ui
  flask_apispec  @doc(description="Update book's information", tags=['Book Requests']) # 在swagger 描述此函数的作用
 
 ORM查询操作
