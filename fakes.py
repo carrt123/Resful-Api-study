@@ -2,7 +2,7 @@ from models.book_models import BooksModel
 from models.user_models import UsersModel
 from exts import db
 from faker import Faker
-
+import os
 fake = Faker()
 
 
