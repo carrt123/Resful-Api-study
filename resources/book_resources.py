@@ -19,9 +19,9 @@ class BooksResource(MethodResource, Resource):
         else:
             return {'error': 'Student not found for id: {book_id}'}, 404
 
-    @doc(description="Update book's information", tags=['Book Requests'])
+    @doc(description="Update book's information", tags=['Book Requests']) # 在swagger 描述此函数的作用
     @use_kwargs(BookRequestSchema, location='json')  # 在json里， 按照BookRequestSchema定义提取参数
-    @use_kwargs(TokenSchema, location='headers')
+    @use_kwargs(TokenSchema, location='headers')      # 在headers 按照TokenSchema 定义提取参数
     @token_required()
     def put(self, book_id: int, **kwargs):
         name = kwargs.get('name', None)
