@@ -49,6 +49,9 @@ def edit():
 def delete(uid):
     del user_dict[int(uid)]
     return redirect("/")
+
+
+print("第五次提交")
 if __name__ == '__main__':
     app.run(debug=True, port=8000)
 
